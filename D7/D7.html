@@ -114,7 +114,8 @@
                         */
 
       const changeUrls = function () {
-        const changedUrl = document.querySelectorAll(""); // ?????????????
+        const changedUrl = document.querySelectorAll("a:not(footer a)");
+        changedUrl.forEach((a) => {a.href = "https://www.google.com"} )
       };
 
       /* ESERCIZIO 5
@@ -214,7 +215,12 @@
                          Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
                       */
 
-      const addRow = function () {};
+      const addRow = function (image , productName , quantity , price) {
+        const newTable = document.getElementsByTagName("table")
+        const tableRow = document.createElement("tr")
+        tableRow.innerText =
+
+      };
 
       /* ESERCIZIO 14
                         Crea una funzione che nasconda le immagini della tabella quando eseguita
